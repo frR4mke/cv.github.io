@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
 
@@ -756,16 +755,13 @@ footer.page-footer {
 
 .app-contact {
   margin-top: auto;
-  /* font-size: 8px; */
+<<<<<<< HEAD
   color: #888;
   font-size: 15px;
-
   display: flex;
   flex-direction: column;
   position: relative;
-  /* color: #ea1d6f; */
-  /* color: red; */
-  /* font-size: 26px; */
+
   text-align: -webkit-auto;
 }
 
@@ -1629,9 +1625,14 @@ footer.page-footer {
 
 .app-contact {
   margin-top: auto;
-  /* font-size: 8px; */
   color: #888;
-  font-size: 17px;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  text-align: -webkit-auto;
+
+
 }
 
 .app-form-group {
@@ -1736,4 +1737,4 @@ footer.page-footer {
     padding: 0;
   }
 }
->>>>>>> d98759a5e4cc7235cd19489b5087d9113b4148ef
+>>>>>>> bf2ede7c2de5a248ee8fd0a9686c203aff2e2d8b
