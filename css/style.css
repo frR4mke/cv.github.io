@@ -8,6 +8,9 @@
   html, body {
   background-image: url('../backgrounds/background4.jpg');
   }
+  .title-for-timeline {
+    color: white;
+  }
 }
 
 @media only screen and (max-width : 992px) {
@@ -158,6 +161,7 @@ p {
   border-radius: 0.313em;
   /* box-shadow: 0 2px 5px 0 rgba(0,0,0,0.5); */
   box-shadow: 0.5rem 0.5rem 2rem 0 rgba(0, 0, 0, 0.2);
+  background-color: white;
 }
 
 .title-for-timeline {
@@ -484,7 +488,7 @@ footer.page-footer {
 }
 
 .acc_title_active {
-  background-color: #63B7E6;
+  background-color: #e91e63;
 }
 
 .acc_title_active:before {
@@ -768,9 +772,9 @@ footer.page-footer {
   outline: none;
 }
 
-.app-form-button:hover {
-  color: #b9134f;
-}
+/* .app-form-button:hover {
+  color: b;
+} */
 
 .credits {
   display: flex;
