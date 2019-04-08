@@ -1738,3 +1738,62 @@ footer.page-footer {
   }
 }
 >>>>>>> bf2ede7c2de5a248ee8fd0a9686c203aff2e2d8b
+
+
+/**
+ * Simple keyframes animation for the chevron on the first slide
+ */
+@keyframes chevronAnimation {
+	0% {
+		transform: translate(0,0) scale(1.0,1.0);
+	}
+	50% {
+		transform: translate(0,5px) scale(0.8,0.8);
+	}
+	100% {
+		transform: translate(0,0) scale(1.0,1.0);
+	}
+}
+
+/**
+ * Responsiveness
+ */
+@media screen and (max-width: 1024px)
+{
+	body
+	{
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	h1 span
+	{
+		display: block;
+	}
+
+	div.block
+	{
+		height: 85vh;
+		padding: 15vh 15vw 0 15vw;
+	}
+}
+
+@media screen and (max-width: 420px)
+{
+	body
+	{
+		font-size: 12px;
+		line-height: 18px;
+	}
+}
+
+@media screen and (max-width: 360px)
+{
+	h1
+	{
+		font-size: 3em;
+	}
+}

@@ -3,12 +3,15 @@
 
     $('.sidenav').sidenav();
     $('.parallax').parallax();
-    $('a').click(function(){
-        $('html, body').animate({
-            scrollTop: $( $.attr(this, 'href') ).offset().top
-        }, 500);
-        return false;
+    $('a').click(function() {
+       if (this.hash !== ""){
+      $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+      }, 500);
+      return false;
+    }
     });
+
     $('.button').mousedown(function(e) {
       var target = e.target;
       var rect = target.getBoundingClientRect();
