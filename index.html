@@ -159,7 +159,7 @@
         <h5 class="title-for-timeline">Work</h5>
         <div class="content timeline">
           <div class="entry">
-            <div class="title">
+            <div class="title" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
               <h3>September 2017 - Present</h3>
               <p>Junior Developer, <a href="http://www.it-energy.ru">IT ENERGY</a></p>
             </div>
@@ -175,7 +175,7 @@
             </div>
           </div>
           <div class="entry">
-            <div class="title">
+            <div class="title" data-scroll="toggle(.fromRightIn, .fromRightOut)">
               <h3>September 2015 - August 2016</h3>
               <p>It Specialist, <a href="http://www.linde-group.ru">LINDE GROUP</a></p>
             </div>
@@ -196,7 +196,7 @@
         <h5 class="title-for-timeline">Education</h5>
         <div class="content timeline">
           <div class="entry">
-            <div class="title">
+            <div class="title" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
               <h3>2019</h3>
               <p>Baccalaureate,<a href="http://www.fa.ru/en/Pages/Home.aspx"> Financial University under the Government of the Russian Federation</a></p>
             </div>
@@ -210,7 +210,7 @@
             </div>
           </div>
           <div class="entry">
-            <div class="title">
+            <div class="title" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
               <h3>2016</h3>
               <p>Specialized secondary,<a href="http://www.fa.ru/org/spo/kip/Pages/Home.aspx"> College of Computer Science and Programming</a></p>
             </div>
@@ -242,10 +242,13 @@
   </div>
 
   <h5 class="hidden-title">Professional Skills</h5>
-  <div class="container" data-scroll="toggle(.scaleDownIn, .scaleDownOut)">
+  <div class="container">
     <section id="sec">
       <ul>
         <li>
+          <div class="test" data-scroll="toggle(.fromLeftIn, .fromLeftOut)">
+
+          </div>
           <span class="fa fa-code"></span>
           <h3>C#</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, sapiente!</p>
@@ -280,12 +283,11 @@
   </div>
 
   <h5 class="hidden-title">References</h5>
-  <div class="container references" data-scroll="toggle(.scaleUpIn, .scaleUpOut)">
-    <!-- <h1>Animated SCSS Accordion (yep, responsive)</h1> -->
-    <div class="acc">
-      <dl>
-        <dt><a class="acc_title" href="#">IT ENERGY</a></dt>
-        <dd class="acc_panel acc_panel_col">
+  <div class="container references">
+    <ul class="collapsible">
+      <li class="active">
+        <div class="collapsible-header"><i class="material-icons">info</i>IT ENETGY</div>
+        <div class="collapsible-body">
           <div class="row">
             <h5>Alexey</h5>
             <p class="category">Lead Developer</p>
@@ -293,9 +295,11 @@
               quaerat dolor, laudantium aut vitae, rem repellat unde! Magni, possimus, id. Natus consequuntur, quidem alias modi veniam unde veritatis in!
             </p>
           </div>
-        </dd>
-        <dt><a href="#" class="acc_title">LINDE GROUP</a></dt>
-        <dd class="acc_panel acc_panel_col">
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">info</i>LINDE GROUP</div>
+        <div class="collapsible-body">
           <div class="row">
             <h5>Eugene</h5>
             <p class="category">Service Desk Specialist</p>
@@ -303,9 +307,9 @@
               quaerat dolor, laudantium aut vitae, rem repellat unde! Magni, possimus, id. Natus consequuntur, quidem alias modi veniam unde veritatis in!
             </p>
           </div>
-        </dd>
-      </dl>
-    </div>
+        </div>
+      </li>
+    </ul>
   </div>
 
   <div class="parallax-container valign-wrapper">
@@ -318,72 +322,39 @@
     </div>
     <div class="parallax"><img src="backgrounds\background5.jpg" alt="Unsplashed background img 3"></div>
     <a id="Contact"></a>
-
   </div>
 
-  <h5 class="hidden-title">Contact</h5>
-  <div class="container" data-scroll="toggle(.fromBottomIn, .fromBottomOut)">
-    <div class="section">
-      <div class="row">
-        <div class="col s12 center">
-          <div class="background">
-            <div class="container contact">
-              <div class="screen">
-                <div class="screen-header">
-                  <div class="screen-header-left">
-                    <div class="screen-header-button close"></div>
-                    <div class="screen-header-button maximize"></div>
-                    <div class="screen-header-button minimize"></div>
-                  </div>
-                  <div class="screen-header-right">
-                    <div class="screen-header-ellipsis"></div>
-                    <div class="screen-header-ellipsis"></div>
-                    <div class="screen-header-ellipsis"></div>
-                  </div>
-                </div>
-                <div class="screen-body">
-                  <div class="screen-body-item left">
-                    <div class="app-title">
-                      <span>CONTACT</span>
-                      <span>ME</span>
-                    </div>
-                    <div class="app-contact">CONTACT INFO : +7 (999) 807-19-13</div>
-                  </div>
-                  <div class="screen-body-item">
-                    <div class="app-form">
-                      <div class="app-form-group">
-                        <input class="app-form-control" placeholder="NAME">
-                      </div>
-                      <div class="app-form-group">
-                        <input class="app-form-control" placeholder="EMAIL">
-                      </div>
-                      <div class="app-form-group">
-                        <input class="app-form-control" placeholder="CONTACT NO">
-                      </div>
-                      <div class="app-form-group message">
-                        <input class="app-form-control" placeholder="MESSAGE">
-                      </div>
-                      <div class="app-form-group buttons">
-                        <!-- <a class="button red" href="#">Download resume</a> -->
+  <!-- <div class="container contact">
 
-                        <button class="btn waves-effect red" type="submit" name="action">Submit
+      <ul id="contactul">
+        <li id="contactli">
+          <a href="#">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <span> - Facebook</span>
+          </a>
+        </li>
+        <li id="contactli">
+          <a href="#">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <span> - Twitter</span>
+          </a>
+        </li>
+        <li id="contactli">
+          <a href="#">
+            <i class="fa fa-google-plus" aria-hidden="true"></i>
+            <span> - Google</span>
+          </a>
+        </li id="contactli">
+        <li id="contactli">
+          <a href="#">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <span> - Instagram</span>
+          </a>
+        </li>
+      </ul>
+  </div> -->
 
-                        </button>
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="parallax-container valign-wrapper">
+  <!-- <div class="parallax-container valign-wrapper">
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row center">
@@ -392,30 +363,26 @@
       </div>
     </div>
     <div class="parallax"><img src="backgrounds\background6.jpg" alt="Unsplashed background img 6"></div>
-  </div>
+  </div> -->
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="js/ScrollTrigger.min.js"></script>
   <script>
-    if (screen.width > 600) {
-      window.counter = function() {
-        // this refers to the html element with the data-scroll-showCallback tag
-        var span = this.querySelector('span');
-        var current = parseInt(span.textContent);
+    window.counter = function() {
+      // this refers to the html element with the data-scroll-showCallback tag
+      var span = this.querySelector('span');
+      var current = parseInt(span.textContent);
 
-        span.textContent = current + 1;
-      };
+      span.textContent = current + 1;
+    };
 
-      document.addEventListener('DOMContentLoaded', function() {
-        var trigger = new ScrollTrigger({
-          addHeight: true
-        });
+    document.addEventListener('DOMContentLoaded', function() {
+      var trigger = new ScrollTrigger({
+        addHeight: true
       });
-    }
-
-    
+    });
   </script>
 
 </body>
