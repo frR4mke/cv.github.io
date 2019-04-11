@@ -5,6 +5,10 @@
   .parallax-container {
     position: fixed;
   }
+  .navbar-fixed{
+    position: fixed;
+    display: none;
+  }
 
   html, body {
     /* background-image: url('../backgrounds/backmobile.jpg'); */
@@ -47,8 +51,16 @@
   padding-bottom: 1rem;
 }
 
+
 .hidden {
-  /* text-shadow: 0.5rem 0.5rem 2rem 0; */
+  background-image: url('../backgrounds/background4.jpg');
+  background-size: cover;
+  color: white;
+  /* position: absolute;   */
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 
 .hidden-title {
@@ -1373,144 +1385,11 @@ footer.page-footer {
   }
 }
 
-.contact {
-  flex: 0 1 700px;
-  /* margin: auto; */
-  padding: 10px;
-  height: 200px;
-  width: 1000px;
-  background:#ccc;
-;
+footer.page-footer {
+    margin: 0;
+    background-color: #fff;
+    /* border-top: black; */
 }
-
-#contactul {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  margin: 0;
-  padding: 0;
-}
-
-#contactul #contactli {
-  list-style: none;
-  margin: 0 5px;
-}
-
-#contactul #contactli a .fa {
-  font-size: 40px;
-  color: #262626;
-  line-height: 80px;
-  transition: .5s;
-  padding-right: 14px;
-}
-
-#contactul #contactli a span {
-  padding: 0;
-  margin: 0;
-  position: absolute;
-  top: 30px;
-  color: #262626;
-  letter-spacing: 4px;
-  transition: .5s;
-}
-
-#contactul #contactli a {
-  text-decoration: none;
-  display: absolute;
-  display: block;
-  width: 210px;
-  height: 80px;
-  background: #fff;
-  text-align: left;
-  padding-left: 20px;
-  transform: rotate(-30deg) skew(25deg) translate(0, 0);
-  transition: .5s;
-  box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
-}
-
-#contactul #contactli a:before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: -20px;
-  height: 100%;
-  width: 20px;
-  background: #b1b1b1;
-  transform: .5s;
-  transform: rotate(0deg) skewY(-45deg);
-}
-
-#contactul #contactli a:after {
-  content: '';
-  position: absolute;
-  bottom: -20px;
-  left: -10px;
-  height: 20px;
-  width: 100%;
-  background: #b1b1b1;
-  transform: .5s;
-  transform: rotate(0deg) skewX(-45deg);
-}
-
-#contactul #contactli a:hover {
-  transform: rotate(-30deg) skew(25deg) translate(20px, -15px);
-  box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
-}
-
-#contactul #contactli:hover .fa {
-  color: #fff;
-}
-
-#contactul #contactli:hover span {
-  color: #fff;
-}
-
-#contactul #contactli:hover:nth-child(1) a {
-  background: #3b5998;
-}
-
-#contactul #contactli:hover:nth-child(1) a:before {
-  background: #365492;
-}
-
-#contactul #contactli:hover:nth-child(1) a:after {
-  background: #4a69ad;
-}
-
-#contactul #contactli:hover:nth-child(2) a {
-  background: #00aced;
-}
-
-#contactul #contactli:hover:nth-child(2) a:before {
-  background: #097aa5;
-}
-
-#contactul #contactli:hover:nth-child(2) a:after {
-  background: #53b9e0;
-}
-
-#contactul #contactli:hover:nth-child(3) a {
-  background: #dd4b39;
-}
-
-#contactul #contactli:hover:nth-child(3) a:before {
-  background: #b33a2b;
-}
-
-#contactul #contactli:hover:nth-child(3) a:after {
-  background: #e66a5a;
-}
-
-#contactul #contactli:hover:nth-child(4) a {
-  background: #e4405f;
-}
-
-#contactul #contactli:hover:nth-child(4) a:before {
-  background: #d81c3f;
-}
-
-#contactul #contactli:hover:nth-child(4) a:after {
-  background: #e46880;
+.footer{
+  color: black;
 }
