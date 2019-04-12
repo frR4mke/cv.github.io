@@ -17,6 +17,7 @@
   /* .title-for-timeline {
     color: white;
   } */
+
 }
 
 @media only screen and (min-width: 760px) {
@@ -1181,7 +1182,7 @@ footer.page-footer {
   margin-bottom: .5em;
   float: left;
   width: 33%;
-  padding-right: 30px;
+  padding-right: 75px;
   text-align: right;
   position: relative;
 }
